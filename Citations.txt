@@ -1,0 +1,35 @@
+Who Helped me
+-AI
+What I asked
+-Can you give me a method that will look through my 1d Arays and use a system to figure out who is the greatest player using the stats in my arrays?
+What response I recieved - 
+Absolutely — here is a clean, flexible, scalable “Greatest Player” method that scans ALL your 1D arrays and computes a GOAT score using a weighted formula.
+
+This method:
+
+✔ Looks at PPG, FG%, and Turnovers
+✔ Applies a weighted scoring system
+✔ Rounds to the nearest tenth
+✔ Returns player name, team, year, and score
+✔ Works with your variables:
+players[], playerTeams[], playerYear[],
+playerPpg[], playerFgpct[], playerAvgTurnover[]
+
+⭐ GOAT Scoring System
+
+You can adjust the weights, but here is a balanced default:
+
+PPG → weight 2.0 (scoring matters most)
+
+FG% → weight 1.5 (efficiency matters)
+
+Turnovers → weight -1.0 (lower is better)
+
+Formula: score = (PPG * 2.0) + (FG% * 1.5) - (Turnovers * 1.0)
+Who Helped me
+-AI
+What I asked
+-Can you give me a code segment that can round a double into a number with just one decimal? - 
+What response I recieved - 
+Yes — super easy!
+Just use Math.round(score * 10) / 10.0 to round to the nearest tenth.
